@@ -1,0 +1,25 @@
+---
+title: "class-06-08"
+format: html
+editor: visual
+---
+```{r}
+#| echo : false
+#| message : false
+library(tidyverse)
+library(primer.data)
+
+```
+
+
+
+```{r}
+#| echo : false
+#| warning : false
+connectedness|>
+  ggplot(aes(x = population, y = connectedness)) + 
+  geom_point() + 
+  scale_x_log10(labels = scales::comma_format())
+```
+
+
